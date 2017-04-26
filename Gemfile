@@ -9,6 +9,8 @@ ruby '2.4.0'
 
 
 gem 'rails', '~> 5.0.2'
+
+gem 'bootstrap-sass', '~>3.3'
 gem 'puma', '~> 3.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '~> 3.0'
