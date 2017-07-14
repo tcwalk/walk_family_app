@@ -1,0 +1,30 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+  </span>
+<% end %>
+
+<%#  if (!(file_name.test/jpg$/) && !(file_name = /jpeg$/) && !(file_name = /gif$/) && !(file_name != /png$/)) {
+%>
+
+<script type="text/javascript">
+    $('#micropost_picture').bind('change', function() {
+        var size_in_megabytes = this.files[0].size/1024/1024;
+        var file_name = this.files[0].name;
+        var jpg = /jpg$/
+        var jpeg = /jpeg$/
+        var png = /png$/
+        var gif = /gif$/
+        if (size_in_megabytes > 5) {
+            alert(file_name + ' is too big. Maximum file size is 5MB. Please choose a smaller file.');
+        }
+        if (!(jpg.test(file_name)) && !(jpeg.test(file_name)) && !(png.test(file_name)) && !(gif.test(file_name)) ) {
+            alert(file_name + ' is not a valid picture file. Only jpg, jpeg, png, and gif files are allowed.');
+        }
+    });
+</script>

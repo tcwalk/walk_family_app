@@ -20,6 +20,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore uploaded test images.
+/public/uploads
+
 # Ignore other unneeded files.
 doc/
 *.swp

@@ -14,6 +14,10 @@ gem 'faker',  '~>1.7'
 gem 'will_paginate',           '~>3.1'
 gem 'bootstrap-will_paginate', '~>1.0'
 
+gem 'carrierwave',             '~>1.1'
+gem 'mini_magick',             '~>4.7'
+gem 'fog',                     '~>1.40'
+
 
 gem 'bootstrap-sass', '~>3.3'
 gem 'puma', '~> 3.4'
