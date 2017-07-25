@@ -18,7 +18,7 @@ class Micropost < ApplicationRecord
   end
 
   def picture_type
-    if !(picture.blank?) && !(picture.to_s =~ /jpg$/) && !(picture.to_s =~ /jpeg$/) && !(picture.to_s =~ /png$/) && !(picture.to_s =~ /gif$/)
+    if !(picture.blank?) && !(picture.to_s.downcase! =~ /jpg$/) && !(picture.to_s.downcase! =~ /jpeg$/) && !(picture.to_s.downcase! =~ /png$/) && !(picture.to_s.downcase! =~ /gif$/)
       errors.add(:picture, "is not a valid file. Only jpg, jpeg, gif, and png files are allowed")
     end
   end
