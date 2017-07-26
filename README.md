@@ -1,6 +1,7 @@
-# Ruby on Rails Tutorial sample application
+# Walk family micropost and picture sharing application
 
-This is the sample application for
+This is an application made by Tom Walk for his family 
+to share short posts and pictures. It is based on the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
 by [Michael Hartl](http://www.michaelhartl.com/).
